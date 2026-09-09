@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Aragão | Aulas de Música e Teoria</title>
-    <meta name="description" content="Aprenda música de verdade. Aulas de violão, cavaquinho, piano e teoria musical no Rio de Janeiro e online.">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- SEO PRINCIPAL -->
+    <title>Aulas de Piano, Violão, Cavaquinho e Música no Rio | João Aragão</title>
+    <meta name="description" content="Aulas de piano, violão, cavaquinho, canto e teoria musical no Rio de Janeiro e online. Aprenda música com prática, compreensão e autonomia. Agende sua aula experimental.">
+    <meta name="keywords" content="aula de piano rj, aula de violão rj, aula de cavaquinho rj, aula de música rio de janeiro, professor de piano rj, professor de violão rj, teoria musical, aulas de música online">
+    <meta name="author" content="João Aragão">
+    <meta name="robots" content="index, follow">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aulas de Música com João Aragão">
+    <meta property="og:description" content="Pare de apenas decorar músicas. Aprenda a entender o que toca e desenvolva autonomia musical.">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- GOOGLE ADS -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18439945323"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18439945323');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18439945323');
     </script>
-    <!-- Fim da Google tag -->
 
-    <!-- Event snippet for Contato conversion page -->
+    <!-- CONVERSÃO GOOGLE ADS -->
     <script>
-      function gtag_report_conversion() {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18439945323/8TfVCJfR_fEcEOv47NhE',
-            'value': 1.0,
-            'currency': 'BRL'
-        });
-      }
+        function gtag_report_conversion() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18439945323/8TfVCJfR_fEcEOv47NhE',
+                'value': 1.0,
+                'currency': 'BRL'
+            });
+        }
     </script>
-    <!-- Fim do Event snippet -->
 
+    <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND CONFIG -->
     <script>
         tailwind.config = {
             theme: {
@@ -40,177 +58,285 @@
                         'grafite': '#2A2A2A',
                         'marfim': '#E4E0D8',
                         'dourado': '#C8A030',
-                        'verde-whats': '#4A9E6A',
+                        'verde-whats': '#4A9E6A'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
                     }
                 }
             }
         }
     </script>
+
     <style>
-        body { background-color: #0C0C0C; color: #E4E0D8; font-family: -apple-system, sans-serif; scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; }
+        body { background-color: #0C0C0C; color: #E4E0D8; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: radial-gradient(circle at 75% 35%, rgba(200, 160, 48, 0.12), transparent 35%), #0C0C0C; }
+        .gold-glow { box-shadow: 0 0 60px rgba(200, 160, 48, 0.12); }
     </style>
+
+    <!-- SCHEMA.ORG -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "João Aragão",
+        "jobTitle": "Professor de Música",
+        "description": "Professor de piano, violão, cavaquinho, canto e teoria musical no Rio de Janeiro e online.",
+        "knowsAbout": ["Piano", "Violão", "Cavaquinho", "Canto", "Teoria Musical", "Harmonia", "Percepção Musical"]
+    }
+    </script>
 </head>
-<body class="antialiased selection:bg-dourado selection:text-preto-fosco relative">
-    
-    <!-- 1. HERO -->
-    <header class="relative border-b border-grafite overflow-hidden py-16 md:py-24">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-            <div class="w-full md:w-1/2 text-center md:text-left z-10">
-                <p class="text-dourado font-bold uppercase tracking-widest text-xs mb-4">Piano • Violão • Cavaquinho • Canto • Teoria</p>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-marfim">
-                    Toque com Liberdade. Entenda a <span class="text-dourado">Música de Verdade.</span>
-                </h1>
-                <p class="text-lg text-marfim/80 mb-8 font-light">
-                    Desenvolva uma base sólida para ler partituras, improvisar e evoluir sem atalhos. O rigor acadêmico traduzido para a prática diária.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" onclick="gtag_report_conversion()" class="bg-verde-whats hover:bg-[#3d8357] text-white font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
-                        <i class="fab fa-whatsapp text-xl"></i> Agendar Aula Experimental
-                    </a>
-                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" onclick="gtag_report_conversion()" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
-                        <i class="fab fa-whatsapp"></i> Garantir Meu E-book Gratuito
-                    </a>
-                </div>
+
+<body class="antialiased selection:bg-dourado selection:text-preto-fosco">
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+<header class="hero-gradient relative overflow-hidden border-b border-grafite">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-14 md:py-20 lg:py-24 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- COPY -->
+        <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 border border-dourado/30 bg-dourado/10 text-dourado rounded-full px-4 py-2 text-xs sm:text-sm font-semibold mb-6">
+                <i class="fas fa-music"></i>
+                Aulas presenciais no Rio e online
             </div>
 
-            <!-- Imagem do Professor com Fallback -->
-            <div class="w-full md:w-1/2 z-10 relative flex justify-center">
-                <div class="absolute inset-0 bg-dourado/20 rounded-2xl transform rotate-3 blur-sm"></div>
-                <img src="im.jpg" alt="Professor João Aragão" 
-                     onerror="this.style.display='none'; document.getElementById('fallback-img').style.display='flex';"
-                     class="relative z-10 rounded-2xl shadow-2xl object-cover w-full max-w-md h-[400px] border border-grafite">
-                
-                <div id="fallback-img" style="display:none;" class="relative z-10 rounded-2xl shadow-2xl w-full max-w-md h-[400px] border border-grafite bg-grafite flex-col items-center justify-center text-center p-6">
-                    <i class="fas fa-user-circle text-dourado text-6xl mb-4"></i>
-                    <p class="text-marfim font-bold text-lg">João Aragão</p>
-                    <p class="text-marfim/60 text-xs mt-1">Professor de Música e Teoria</p>
-                </div>
-            </div>
-        </div>
-    </header>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight text-marfim">
+                Pare de apenas decorar músicas.
+                <span class="block text-dourado mt-2">Aprenda a entender o que você toca.</span>
+            </h1>
 
-    <!-- 2. OVP & RIGOR DIDÁTICO -->
-    <section class="bg-preto-fosco py-20 px-4 border-b border-grafite">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4 text-marfim">A Teoria Descomplicada</h2>
-            <p class="text-marfim/70 mb-12 max-w-2xl mx-auto">Muitos livros tradicionais tornam a teoria musical intimidante. Minha metodologia traduz a lógica acadêmica em passos práticos para o seu instrumento.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                <div class="bg-grafite p-6 rounded-xl border border-gray-800 hover:border-dourado transition-all">
-                    <div class="text-dourado text-2xl mb-4"><i class="fas fa-music"></i></div>
-                    <h3 class="font-bold text-xl text-marfim mb-2">Fundamentos e Claves</h3>
-                    <p class="text-marfim/70 text-sm">Do entendimento das propriedades do som à leitura fluente nas Claves de Sol e Fá.</p>
-                </div>
-                <div class="bg-grafite p-6 rounded-xl border border-gray-800 hover:border-dourado transition-all">
-                    <div class="text-dourado text-2xl mb-4"><i class="fas fa-wave-square"></i></div>
-                    <h3 class="font-bold text-xl text-marfim mb-2">Intervalos e Escalas</h3>
-                    <p class="text-marfim/70 text-sm">Compreenda as distâncias entre as notas para dominar escalas maiores, menores e modais.</p>
-                </div>
-                <div class="bg-grafite p-6 rounded-xl border border-gray-800 hover:border-dourado transition-all">
-                    <div class="text-dourado text-2xl mb-4"><i class="fas fa-project-diagram"></i></div>
-                    <h3 class="font-bold text-xl text-marfim mb-2">Acordes e Harmonia</h3>
-                    <p class="text-marfim/70 text-sm">Entenda a formação estrutural dos acordes para criar arranjos e improvisar com liberdade.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p class="mt-6 text-lg sm:text-xl leading-relaxed text-marfim/75 max-w-2xl">
+                Aulas de piano, violão, cavaquinho, canto e teoria musical para quem quer tocar com mais segurança, compreender harmonia, ler música e desenvolver autonomia no instrumento.
+            </p>
 
-    <!-- 3. PROVA SOCIAL -->
-    <section class="bg-grafite py-20 px-4 border-b border-gray-800">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-                <div>
-                    <h2 class="text-3xl font-bold text-marfim mb-2">A evolução na prática</h2>
-                    <p class="text-marfim/70">O que os alunos dizem (e tocam) no dia a dia.</p>
-                </div>
-                <a href="#" class="text-dourado hover:text-marfim transition-colors text-sm font-bold flex items-center gap-2">
-                    <i class="fab fa-instagram text-xl"></i> Veja o progresso no Instagram
+            <div class="mt-8 grid sm:grid-cols-2 gap-3 text-sm sm:text-base text-marfim/85">
+                <div class="flex items-start gap-3"><i class="fas fa-check-circle text-dourado mt-1"></i><span>Comece mesmo sem experiência</span></div>
+                <div class="flex items-start gap-3"><i class="fas fa-check-circle text-dourado mt-1"></i><span>Aprenda repertório que você gosta</span></div>
+                <div class="flex items-start gap-3"><i class="fas fa-check-circle text-dourado mt-1"></i><span>Entenda acordes e harmonia</span></div>
+                <div class="flex items-start gap-3"><i class="fas fa-check-circle text-dourado mt-1"></i><span>Desenvolva leitura e percepção</span></div>
+            </div>
+
+            <div class="mt-9 flex flex-col sm:flex-row gap-4">
+                <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" onclick="gtag_report_conversion()" class="bg-verde-whats hover:bg-[#3d8357] text-white font-bold px-7 py-4 rounded-xl transition-all duration-300 inline-flex justify-center items-center gap-3 shadow-lg hover:-translate-y-1">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    Quero fazer uma aula experimental
+                </a>
+                <a href="#como-funciona" class="border border-dourado/50 hover:border-dourado hover:bg-dourado/10 text-marfim font-semibold px-7 py-4 rounded-xl transition-all inline-flex justify-center items-center gap-2">
+                    Como funcionam as aulas
+                    <i class="fas fa-arrow-down text-dourado"></i>
                 </a>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-preto-fosco p-6 rounded-xl border border-gray-800 relative">
-                    <i class="fas fa-quote-left text-dourado/20 text-4xl absolute top-4 right-4"></i>
-                    <p class="text-marfim/80 text-sm italic mb-4 mt-2">"A lógica que o João ensina nas aulas resolveu minha dificuldade com escalas em semanas."</p>
-                    <p class="text-dourado font-bold text-sm">- Marcos S., Aluno de Violão</p>
+
+            <p class="mt-4 text-xs sm:text-sm text-marfim/50 flex items-center gap-2">
+                <i class="fas fa-comment-dots text-dourado"></i>
+                Fale diretamente comigo pelo WhatsApp e tire suas dúvidas antes de começar.
+            </p>
+        </div>
+
+        <!-- FOTO + AUTORIDADE -->
+        <div class="relative z-10 flex justify-center">
+            <div class="absolute w-[85%] h-[85%] bg-dourado/10 blur-3xl rounded-full"></div>
+            <div class="relative max-w-md w-full">
+                <div class="relative rounded-3xl overflow-hidden border border-dourado/20 gold-glow">
+                    <img src="im.jpg" alt="Professor de música João Aragão" class="w-full h-[430px] sm:h-[500px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-preto-fosco via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <p class="text-2xl font-bold text-white">João Aragão</p>
+                        <p class="text-dourado text-sm mt-1 font-medium">Professor de Música</p>
+                    </div>
                 </div>
-                <div class="bg-preto-fosco p-6 rounded-xl border border-gray-800 relative">
-                    <i class="fas fa-quote-left text-dourado/20 text-4xl absolute top-4 right-4"></i>
-                    <p class="text-marfim/80 text-sm italic mb-4 mt-2">"O aplicativo B.E.M. e as aulas de percepção garantiram minha aprovação na prova de música da universidade!"</p>
-                    <p class="text-dourado font-bold text-sm">- Ana P., Vestibulanda</p>
-                </div>
-                <div class="bg-preto-fosco p-6 rounded-xl border border-gray-800 relative">
-                    <i class="fas fa-quote-left text-dourado/20 text-4xl absolute top-4 right-4"></i>
-                    <p class="text-marfim/80 text-sm italic mb-4 mt-2">"Saí do zero no cavaquinho. A didática, misturando cultura popular e teoria, é sensacional."</p>
-                    <p class="text-dourado font-bold text-sm">- Roberto M., Iniciante</p>
+
+                <div class="relative -mt-6 mx-4 bg-grafite border border-gray-700 rounded-2xl p-5 shadow-2xl">
+                    <p class="text-xs uppercase tracking-widest text-dourado font-bold mb-3">Formação + experiência</p>
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-marfim/80">
+                        <div class="flex gap-2"><i class="fas fa-graduation-cap text-dourado mt-1"></i><span>Licenciado em Música</span></div>
+                        <div class="flex gap-2"><i class="fas fa-music text-dourado mt-1"></i><span>Arranjo na UNIRIO</span></div>
+                        <div class="flex gap-2"><i class="fas fa-chalkboard-teacher text-dourado mt-1"></i><span>Anos de experiência docente</span></div>
+                        <div class="flex gap-2"><i class="fas fa-headphones text-dourado mt-1"></i><span>Prática + teoria + percepção</span></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</header>
 
-    <!-- 4. SEÇÃO DE E-BOOK VIA WHATSAPP -->
-    <section class="bg-preto-fosco py-20 px-4 border-b border-grafite">
-        <div class="max-w-4xl mx-auto bg-grafite p-8 md:p-12 rounded-2xl border border-dourado/40 shadow-xl flex flex-col md:flex-row items-center gap-8">
-            <div class="w-full md:w-1/3 text-center">
-                <div class="w-28 h-36 bg-preto-fosco border-2 border-dourado rounded-lg mx-auto flex flex-col items-center justify-center p-4 shadow-inner relative group">
-                    <i class="fas fa-file-pdf text-5xl text-dourado mb-2"></i>
-                    <span class="text-xs text-marfim font-bold">E-book Gratuito</span>
+<!-- ======================================================
+     PARA QUEM SÃO AS AULAS
+====================================================== -->
+<section class="bg-preto-fosco py-20 md:py-24 px-5 border-b border-grafite">
+    <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-14">
+            <p class="text-dourado uppercase tracking-[0.2em] font-bold text-xs mb-3">Não importa de onde você está começando</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-marfim">Você não precisa “ter dom” para aprender música.</h2>
+            <p class="text-marfim/65 text-lg leading-relaxed mt-5">
+                O caminho muda de aluno para aluno. Por isso, as aulas são adaptadas ao seu nível, seus objetivos e ao repertório que você quer tocar.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- CARD 1 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-seedling"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem está começando</h3>
+                <p class="text-marfim/65 leading-relaxed">Você nunca tocou ou acha que começou tarde? Vamos construir sua base do zero, sem pressa e sem pular etapas importantes.</p>
+            </div>
+            <!-- CARD 2 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-unlock-alt"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem sente que travou</h3>
+                <p class="text-marfim/65 leading-relaxed">Você já toca algumas músicas, mas sente que está sempre repetindo as mesmas coisas? Vamos preencher as lacunas e organizar seu conhecimento.</p>
+            </div>
+            <!-- CARD 3 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-book-open"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem quer ler música</h3>
+                <p class="text-marfim/65 leading-relaxed">Aprenda a interpretar partitura, ritmo e harmonia e deixe de depender somente de cifras, vídeos ou imitação.</p>
+            </div>
+            <!-- CARD 4 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-lightbulb"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem quer entender harmonia</h3>
+                <p class="text-marfim/65 leading-relaxed">Pare de decorar acordes isolados e comece a compreender por que eles funcionam dentro das músicas.</p>
+            </div>
+            <!-- CARD 5 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-random"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem quer improvisar</h3>
+                <p class="text-marfim/65 leading-relaxed">Entenda escalas, acordes, campo harmônico e percepção para começar a criar suas próprias ideias musicais.</p>
+            </div>
+            <!-- CARD 6 -->
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-7 hover:border-dourado/60 transition-all">
+                <div class="w-12 h-12 bg-dourado/10 rounded-xl flex items-center justify-center text-dourado text-xl mb-5"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="text-xl font-bold text-marfim mb-3">Para quem quer estudar seriamente</h3>
+                <p class="text-marfim/65 leading-relaxed">Desenvolva percepção, teoria e prática para aprofundar sua formação ou se preparar para vestibulares e estudos avançados.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================
+     METODOLOGIA & DIFERENCIAIS
+====================================================== -->
+<section id="como-funciona" class="bg-preto-fosco py-20 md:py-24 px-5 border-b border-grafite">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <p class="text-dourado uppercase tracking-[0.2em] font-bold text-xs mb-3">Método e Ferramentas</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-marfim mb-6">Uma abordagem sem atalhos, focada em resultados reais.</h2>
+            <p class="text-marfim/70 leading-relaxed mb-6">
+                Aulas estruturadas unindo teoria e prática de forma integrada. O objetivo não é apenas reproduzir mecanicamente, mas entender o funcionamento interno da música.
+            </p>
+            <div class="space-y-4">
+                <div class="flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-lg bg-dourado/10 text-dourado flex items-center justify-center shrink-0 mt-1"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h4 class="font-bold text-marfim text-lg">Prática Deliberada</h4>
+                        <p class="text-marfim/60 text-sm">Exercícios direcionados para destravar suas dificuldades específicas com eficiência.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-lg bg-dourado/10 text-dourado flex items-center justify-center shrink-0 mt-1"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h4 class="font-bold text-marfim text-lg">Percepção e Harmonia Integradas</h4>
+                        <p class="text-marfim/60 text-sm">Desenvolvimento auditivo apoiado por ferramentas modernas de treino de percepção.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="w-8 h-8 rounded-lg bg-dourado/10 text-dourado flex items-center justify-center shrink-0 mt-1"><i class="fas fa-check"></i></div>
+                    <div>
+                        <h4 class="font-bold text-marfim text-lg">Flexibilidade Presencial e Online</h4>
+                        <p class="text-marfim/60 text-sm">Aulas no Rio de Janeiro ou de onde você estiver com total interatividade.</p>
+                    </div>
                 </div>
             </div>
-            <div class="w-full md:w-2/3 text-center md:text-left">
-                <span class="bg-dourado/20 text-dourado text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Material Exclusivo</span>
-                <h2 class="text-2xl md:text-3xl font-bold mt-3 mb-3 text-marfim">Baixe o Guia: Introdução à Teoria Musical</h2>
-                <p class="text-marfim/70 text-sm mb-6 leading-relaxed">
-                    Quer dar o primeiro passo agora mesmo nos estudos? Clique abaixo para garantir o seu material gratuito direto no WhatsApp e destravar a leitura no seu instrumento.
-                </p>
-                <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" onclick="gtag_report_conversion()" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-3 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-md">
-                    <i class="fab fa-whatsapp"></i> Garantir Meu E-book Gratuito
-                </a>
+        </div>
+
+        <div class="bg-grafite border border-gray-800 rounded-3xl p-8 lg:p-10">
+            <h3 class="text-2xl font-bold text-marfim mb-6">Áreas de Ensino</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-preto-fosco p-5 rounded-2xl border border-gray-800">
+                    <i class="fas fa-music text-dourado text-2xl mb-3"></i>
+                    <h4 class="font-bold text-marfim text-lg">Piano</h4>
+                    <p class="text-marfim/60 text-sm mt-1">Do básico ao repertório avançado.</p>
+                </div>
+                <div class="bg-preto-fosco p-5 rounded-2xl border border-gray-800">
+                    <i class="fas fa-guitar text-dourado text-2xl mb-3"></i>
+                    <h4 class="font-bold text-marfim text-lg">Violão</h4>
+                    <p class="text-marfim/60 text-sm mt-1">Violão popular, acompanhamento e solos.</p>
+                </div>
+                <div class="bg-preto-fosco p-5 rounded-2xl border border-gray-800">
+                    <i class="fas fa-drum text-dourado text-2xl mb-3"></i>
+                    <h4 class="font-bold text-marfim text-lg">Cavaquinho</h4>
+                    <p class="text-marfim/60 text-sm mt-1">Levadas, harmonia e choro.</p>
+                </div>
+                <div class="bg-preto-fosco p-5 rounded-2xl border border-gray-800">
+                    <i class="fas fa-microphone-alt text-dourado text-2xl mb-3"></i>
+                    <h4 class="font-bold text-marfim text-lg">Canto</h4>
+                    <p class="text-marfim/60 text-sm mt-1">Técnica vocal, afinação e projeção.</p>
+                </div>
+                <div class="bg-preto-fosco p-5 rounded-2xl border border-gray-800 sm:col-span-2">
+                    <i class="fas fa-book text-dourado text-2xl mb-3"></i>
+                    <h4 class="font-bold text-marfim text-lg">Teoria Musical & Harmonia</h4>
+                    <p class="text-marfim/60 text-sm mt-1">Solfejo, leitura, percepção e preparatório musical.</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- 5. CAPTURA DE LEADS -->
-    <section id="captura" class="bg-grafite py-20 px-4 border-b border-gray-800 relative overflow-hidden">
-        <div class="max-w-4xl mx-auto bg-preto-fosco p-8 md:p-12 rounded-2xl border border-gray-800 relative z-10 shadow-2xl flex flex-col md:flex-row items-center gap-8">
-            <div class="w-full md:w-1/2 text-center md:text-left">
-                <span class="bg-verde-whats/20 text-verde-whats text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Newsletter Musical</span>
-                <h2 class="text-2xl font-bold mt-4 mb-2 text-marfim">Dicas semanais no seu e-mail</h2>
-                <p class="text-marfim/70 text-sm">Receba orientações de estudo, análises de harmonia e avisos de novas vagas diretamente na sua caixa de entrada.</p>
+<!-- ======================================================
+     FAQ (PERGUNTAS FREQUENTES)
+====================================================== -->
+<section class="bg-preto-fosco py-20 md:py-24 px-5 border-b border-grafite">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14">
+            <p class="text-dourado uppercase tracking-[0.2em] font-bold text-xs mb-3">Tire suas dúvidas</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-marfim">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-6">
+                <h3 class="font-bold text-marfim text-lg mb-2">As aulas são presenciais ou online?</h3>
+                <p class="text-marfim/70 text-sm leading-relaxed">Ofereço aulas presenciais no Rio de Janeiro e também atendimento online por vídeo com excelente qualidade de áudio e imagem para alunos de qualquer lugar.</p>
             </div>
-            
-            <div class="w-full md:w-1/2">
-                <form action="#" method="POST" class="flex flex-col gap-4">
-                    <input type="text" placeholder="Seu primeiro nome" required class="w-full bg-grafite border border-gray-700 rounded-lg px-4 py-3 text-marfim focus:outline-none focus:border-dourado">
-                    <input type="email" placeholder="Seu melhor e-mail" required class="w-full bg-grafite border border-gray-700 rounded-lg px-4 py-3 text-marfim focus:outline-none focus:border-dourado">
-                    <button type="submit" class="w-full bg-verde-whats hover:bg-[#3d8357] text-white font-bold py-3 px-4 rounded-lg transition-all">
-                        Quero Receber Conteúdos
-                    </button>
-                </form>
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-6">
+                <h3 class="font-bold text-marfim text-lg mb-2">Nunca toquei nenhum instrumento. Consigo começar?</h3>
+                <p class="text-marfim/70 text-sm leading-relaxed">Com certeza! O programa é totalmente adaptado para iniciantes absolutos, construindo uma base sólida desde o primeiro dia sem pressa.</p>
+            </div>
+            <div class="bg-grafite border border-gray-800 rounded-2xl p-6">
+                <h3 class="font-bold text-marfim text-lg mb-2">Como funciona a aula experimental?</h3>
+                <p class="text-marfim/70 text-sm leading-relaxed">Você entra em contato pelo WhatsApp, conversamos sobre seus objetivos musicais e alinhamos o melhor formato para começarmos a sua evolução.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="bg-preto-fosco text-marfim/40 py-10 text-center text-sm">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2026 João Aragão. Todos os direitos reservados.</p>
-            <div class="flex gap-4">
-                <a href="#" class="hover:text-dourado transition-colors">Instagram</a>
-                <a href="https://wa.me/5521978940184" target="_blank" onclick="gtag_report_conversion()" class="hover:text-dourado transition-colors">WhatsApp</a>
-                <a href="#" class="hover:text-dourado transition-colors">Aplicativo B.E.M.</a>
-            </div>
+<!-- ======================================================
+     CTA FINAL / FOOTER
+====================================================== -->
+<footer class="bg-grafite py-16 px-5 border-t border-dourado/20 text-center">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-marfim mb-4">Pronto para transformar sua relação com a música?</h2>
+        <p class="text-marfim/70 mb-8">Entre em contato agora pelo WhatsApp e agende sua aula experimental.</p>
+        
+        <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" onclick="gtag_report_conversion()" class="bg-verde-whats hover:bg-[#3d8357] text-white font-bold px-8 py-4 rounded-xl transition-all inline-flex justify-center items-center gap-3 shadow-lg hover:-translate-y-1">
+            <i class="fab fa-whatsapp text-xl"></i>
+            Falar com o Professor João Aragão
+        </a>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 text-sm text-marfim/50 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 João Aragão. Todos os direitos reservados.</p>
+            <p>Rio de Janeiro - RJ</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Estou%20no%20seu%20site%20e%20gostaria%20de%20informações." 
-       target="_blank" 
-       onclick="gtag_report_conversion()"
-       class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-verde-whats hover:bg-[#3d8357] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all z-50">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5521978940184?text=Olá,%20João!%20Vi%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" onclick="gtag_report_conversion()" class="fixed bottom-6 right-6 z-50 bg-verde-whats text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <i class="fab fa-whatsapp text-3xl"></i>
+</a>
 
 </body>
 </html>
