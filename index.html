@@ -16,6 +16,18 @@
     </script>
     <!-- Fim da Google tag -->
 
+    <!-- Event snippet for Contato conversion page -->
+    <script>
+      function gtag_report_conversion() {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18439945323/8TfVCJfR_fEcEOv47NhE',
+            'value': 1.0,
+            'currency': 'BRL'
+        });
+      }
+    </script>
+    <!-- Fim do Event snippet -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -53,10 +65,10 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" class="bg-verde-whats hover:bg-[#3d8357] text-white font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
+                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Gostaria%20de%20agendar%20uma%20aula%20experimental." target="_blank" onclick="gtag_report_conversion()" class="bg-verde-whats hover:bg-[#3d8357] text-white font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
                         <i class="fab fa-whatsapp text-xl"></i> Agendar Aula Experimental
                     </a>
-                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
+                    <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" onclick="gtag_report_conversion()" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-4 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-lg">
                         <i class="fab fa-whatsapp"></i> Garantir Meu E-book Gratuito
                     </a>
                 </div>
@@ -152,7 +164,7 @@
                 <p class="text-marfim/70 text-sm mb-6 leading-relaxed">
                     Quer dar o primeiro passo agora mesmo nos estudos? Clique abaixo para garantir o seu material gratuito direto no WhatsApp e destravar a leitura no seu instrumento.
                 </p>
-                <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-3 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-md">
+                <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Quero%20garantir%20meu%20e-book%20gratuito%20de%20teoria%20musical." target="_blank" onclick="gtag_report_conversion()" class="bg-dourado hover:bg-[#b08d29] text-preto-fosco font-bold py-3 px-6 rounded-lg transition-all inline-flex items-center justify-center gap-2 shadow-md">
                     <i class="fab fa-whatsapp"></i> Garantir Meu E-book Gratuito
                 </a>
             </div>
@@ -186,7 +198,7 @@
             <p>© 2026 João Aragão. Todos os direitos reservados.</p>
             <div class="flex gap-4">
                 <a href="#" class="hover:text-dourado transition-colors">Instagram</a>
-                <a href="https://wa.me/5521978940184" target="_blank" class="hover:text-dourado transition-colors">WhatsApp</a>
+                <a href="https://wa.me/5521978940184" target="_blank" onclick="gtag_report_conversion()" class="hover:text-dourado transition-colors">WhatsApp</a>
                 <a href="#" class="hover:text-dourado transition-colors">Aplicativo B.E.M.</a>
             </div>
         </div>
@@ -195,6 +207,7 @@
     <!-- BOTÃO FLUTUANTE WHATSAPP -->
     <a href="https://wa.me/5521978940184?text=Olá,%20João!%20Estou%20no%20seu%20site%20e%20gostaria%20de%20informações." 
        target="_blank" 
+       onclick="gtag_report_conversion()"
        class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-verde-whats hover:bg-[#3d8357] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all z-50">
         <i class="fab fa-whatsapp"></i>
     </a>
